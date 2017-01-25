@@ -1,0 +1,44 @@
+h1{
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 25px;
+}
+nav.index ul{
+  width: 100%;
+  padding: 0 0;
+}
+.index li{
+  background: #d2d2d2;
+  color: white;
+  margin: 1px 0px;
+  text-align: center;
+  font-size: 20px;
+
+}
+.index a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+p{
+  background: #fd7e6d;
+  padding: 10px 5px;
+  margin: 10px 30px;
+
+}
+div.contact-list{
+  background: #2ce0cf;
+  color:black;
+  margin: 10px 30px 10px -10px;
+  list-style: none;
+}
+
+footer{
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 10px;
+}

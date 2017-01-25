@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title><%= @crm_app_name %></title>
+  </head>
+  <body>
+    <h1><%= @crm_app_name %></h1>
+    <nav class="index">
+      <ul>
+        <li><a href="/contacts">Home</a></li>
+        <li><a href="/contacts/new">Add a Contact</a></li>
+        <li><a href=''>About</a></li>
+      </ul>
+    </nav>
+
+    <%= yield %>
+  </body>
+  <footer> © Bitmaker 2017 </footer>
+</html>

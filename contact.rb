@@ -97,7 +97,7 @@ class Contact
   def initialize(first_name, last_name, number, email, note)
     @first_name = first_name
     @last_name = last_name
-    # @number = number #take out for mini test.
+    @number = number #take out for mini test.
     @email = email
     @note = note
     @id = @@id

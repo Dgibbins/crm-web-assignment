@@ -47,20 +47,20 @@ class Contact
   # and return the contact who has that id
   def self.find(id)
     @@contacts.each do |contact|
-      if id == contact.id
+      if contact.id == id.to_i
         return contact
       end
     end
     return
   end
 
-  def self.find(full_name)
-    @@contacts.each do |contact|
-      if full_name == contact.full_name
-      end
-      return contact
-    end
-  end
+  # def self.find(full_name)
+  #   @@contacts.each do |contact|
+  #     if full_name == contact.full_name
+  #     end
+  #     return contact
+  #   end
+  # end
 
 
   def self.find_by(atrb, value)
@@ -164,3 +164,6 @@ class Contact
   # Feel free to add other methods here, if you need them.
 
 end
+Contact.create('Mark', 'Zuckerberg', 'mark@facebook.com','416-967-1111', 'CEO')
+Contact.create('Sergey', 'Brin', 'sergey@google.com','416-967-1111', 'Co-Founder')
+Contact.create('Steve', 'Jobs', 'steve@apple.com','416-967-1111', 'Visionary')

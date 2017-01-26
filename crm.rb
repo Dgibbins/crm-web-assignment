@@ -55,14 +55,18 @@ put '/contacts/:id' do
     @contact.email = params[:email]
     @contact.note = params[:note]
 
-    redirect to('/contacts')
+    redirect to('/')
   else
     raise Sinatra::NotFound
   end
 end
 
-# delete '/poop' do
-#   #block of code to delete contact list
-#
-#   redirect to ('/')
-# end
+delete '/contacts/:id' do
+  @contact = Contact.find(params[:id].to_i)
+  if @contact
+    @contact.delete
+    redirect to ('/')
+  else
+    raise Sinatra::NotFound
+  end
+end
